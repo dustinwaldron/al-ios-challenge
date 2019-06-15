@@ -1,19 +1,24 @@
 import UIKit
+import MapKit
 
 class ServiceProviderDetailViewController: UIViewController {
     
     var serviceProvider: ServiceProvider?
     
-    @IBOutlet var serviceProviderDetailView: ServiceProviderDetailView!
+    @IBOutlet weak var serviceProviderMapView: ServiceProviderDetailMapView!
+    @IBOutlet weak var serviceProviderDetailView: ServiceProviderDetailView!
 
     override func viewDidLoad() {
-        let pro = self.serviceProvider!
-        print("Opening details for \(pro.name)")
-        self.navigationItem.title = pro.name;
-        ServiceProviderMapper.toServiceProviderDetailView(serviceProvider: self.serviceProvider!, serviceProviderDetailView: self.serviceProviderDetailView)
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let pro = self.serviceProvider!
+        print("Opening details for Service Provider: \(pro.name)")
+        self.navigationItem.title = pro.name;
+        // initalize map view
+        serviceProviderMapView.centerMapOnServiceProviderLocation(serviceProvider: pro)
+        let pin = ServiceProviderMapper.toServiceProviderMapPin(serviceProvider: pro)
+        serviceProviderMapView.addAnnotation(pin)
+        // initialize detail view
+        ServiceProviderMapper.toServiceProviderDetailView(serviceProvider: pro, serviceProviderDetailView: self.serviceProviderDetailView)
     }
     
 

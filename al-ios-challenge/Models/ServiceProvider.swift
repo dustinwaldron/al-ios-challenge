@@ -7,11 +7,11 @@ class ServiceProvider {
     var reviewCount: Int32
     var state: String
     var postalCode: String
-    var latitude: String
-    var longitude: String
+    var latitude: Double
+    var longitude: Double
     
     init(name: String, city: String, overallGrade: String, reviewCount: Int32, state: String,
-         postalCode: String, latitude: String, longitude: String) {
+         postalCode: String, latitude: Double, longitude: Double) {
         self.name = name
         self.city = city
         self.overallGrade = overallGrade

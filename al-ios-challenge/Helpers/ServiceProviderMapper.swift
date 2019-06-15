@@ -1,15 +1,12 @@
-//
-//  ServiceProviderMapper.swift
-//  al-ios-challenge
-//
-//  Created by Dustin Waldron on 6/13/19.
-//  Copyright © 2019 Dustin Waldron. All rights reserved.
-//
-
 import Foundation
 import UIKit
+import CoreLocation
 
 class ServiceProviderMapper {
+    static private func makeLocationLabelString(serviceProvider: ServiceProvider) -> String {
+        return "\(serviceProvider.city), \(serviceProvider.state) \(serviceProvider.postalCode)"
+    }
+    
     static func toServiceProviderTableViewCell(serviceProvider: ServiceProvider, serviceProviderCell: ServiceProviderTableViewCell) -> ServiceProviderTableViewCell {
         serviceProviderCell.nameLabel?.text = serviceProvider.name
         serviceProviderCell.gradeLabel?.text = serviceProvider.overallGrade
@@ -18,7 +15,7 @@ class ServiceProviderMapper {
         serviceProviderCell.gradeLabel?.layer.cornerRadius = serviceProviderCell.gradeLabel!.frame.height / 2.0
         serviceProviderCell.gradeLabel?.layer.masksToBounds = true;
         serviceProviderCell.reviewLabel?.text = "\(serviceProvider.reviewCount) Recent Reviews"
-        serviceProviderCell.locationLabel?.text = "\(serviceProvider.city), \(serviceProvider.state) \(serviceProvider.postalCode)"
+        serviceProviderCell.locationLabel?.text = makeLocationLabelString(serviceProvider: serviceProvider)
         return serviceProviderCell
     }
     
@@ -26,6 +23,10 @@ class ServiceProviderMapper {
         serviceProviderDetailView.nameLabel?.text = serviceProvider.name
         serviceProviderDetailView.gradeLabel?.text = "Grade: \(serviceProvider.overallGrade)"
         serviceProviderDetailView.reviewLabel?.text = "Reviews: \(serviceProvider.reviewCount)"
-        serviceProviderDetailView.locationLabel?.text = "\(serviceProvider.city), \(serviceProvider.state) \(serviceProvider.postalCode)"
+        serviceProviderDetailView.locationLabel?.text = makeLocationLabelString(serviceProvider: serviceProvider)
+    }
+    
+    static func toServiceProviderMapPin(serviceProvider: ServiceProvider) -> ServiceProviderDetailMapPin {
+        return ServiceProviderDetailMapPin(name: serviceProvider.name, location: makeLocationLabelString(serviceProvider: serviceProvider), discipline: "Service Provider", coordinate: CLLocationCoordinate2D(latitude: serviceProvider.latitude, longitude: serviceProvider.longitude))
     }
 }

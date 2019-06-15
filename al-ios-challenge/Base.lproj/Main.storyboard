@@ -134,7 +134,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="ServiceProviderMap" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="RJk-i4-PQN">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="ServiceProviderMap" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="RJk-i4-PQN" customClass="ServiceProviderDetailMapView" customModule="al_ios_challenge" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="84" width="375" height="220"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="220" id="gcW-u8-BAh"/>
@@ -235,6 +235,7 @@
                     </view>
                     <connections>
                         <outlet property="serviceProviderDetailView" destination="NnX-0D-f6L" id="C8n-cf-Bw2"/>
+                        <outlet property="serviceProviderMapView" destination="RJk-i4-PQN" id="G5K-Lk-Lgd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YVB-0a-pVe" userLabel="First Responder" sceneMemberID="firstResponder"/>
