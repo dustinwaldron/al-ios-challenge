@@ -4,7 +4,39 @@ class ServiceProviderTableViewController: UIViewController, UITableViewDelegate,
     var serviceProviders: [ServiceProvider] = []
     var selectedServiceProvider: ServiceProvider?
     
-    @IBOutlet var serviceProviderTableView: UITableView!
+    @IBOutlet weak var serviceProviderTableView: UITableView!
+    
+    private func sortServiceProviderTableView(sortOption: String) {
+        print("Sorting service providers by \(sortOption)")
+        switch sortOption {
+        case "name":
+            self.serviceProviders.sort(by: { sp1, sp2 in return sp1.name < sp2.name})
+        case "reviewCount":
+            self.serviceProviders.sort(by: { sp1, sp2 in return sp1.reviewCount > sp2.reviewCount})
+        case "overallGrade":
+            self.serviceProviders.sort(by: { sp1, sp2 in return sp1.overallGrade < sp2.overallGrade})
+        default:
+            print("invalid value for sortOption: \(sortOption)")
+        }
+        self.serviceProviderTableView.reloadData()
+    }
+    
+    @IBAction func selectSort(sender: UIBarButtonItem) {
+        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        let sortByName = UIAlertAction(title: "Sort by name", style: .default) { (action:UIAlertAction) in
+            self.sortServiceProviderTableView(sortOption: "name")
+        }
+        let sortByReviews = UIAlertAction(title: "Sort by reviews", style: .default) { (action:UIAlertAction) in
+            self.sortServiceProviderTableView(sortOption: "reviewCount")
+        }
+        let sortByGrade = UIAlertAction(title: "Sort by grade", style: .default) { (action:UIAlertAction) in
+            self.sortServiceProviderTableView(sortOption: "overallGrade")
+        }
+        alert.addAction(sortByName)
+        alert.addAction(sortByReviews)
+        alert.addAction(sortByGrade)
+        self.present(alert, animated: true, completion: nil)
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return serviceProviders.count
@@ -38,13 +70,12 @@ class ServiceProviderTableViewController: UIViewController, UITableViewDelegate,
                 }
             }
         }
-        self.navigationItem.title = "Serviceproviders";
         super.viewWillAppear(animated)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.navigationItem.title = "Serviceproviders";
     }
 
 

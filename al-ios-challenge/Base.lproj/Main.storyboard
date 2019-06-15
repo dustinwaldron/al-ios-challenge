@@ -18,8 +18,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G7q-Y0-W9E">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="il7-ya-QpI"/>
+                                    <barButtonItem title="Sort" style="done" id="EF0-LM-Jan" userLabel="Sort Button">
+                                        <connections>
+                                            <action selector="selectSortWithSender:" destination="BYZ-38-t0r" id="cNq-G8-W0J"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </toolbar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DET-fH-Q87">
-                                <rect key="frame" x="0.0" y="114" width="375" height="553"/>
+                                <rect key="frame" x="0.0" y="108" width="375" height="559"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ServiceProviderTableViewCell" id="xAy-3V-8jD" customClass="ServiceProviderTableViewCell" customModule="al_ios_challenge" customModuleProvider="target">
@@ -92,22 +104,13 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="MyH-tZ-Szr"/>
                                 </connections>
                             </tableView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G7q-Y0-W9E">
-                                <rect key="frame" x="0.0" y="64" width="375" height="50"/>
-                                <items>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="il7-ya-QpI"/>
-                                    <barButtonItem title="Sort" style="done" id="EF0-LM-Jan" userLabel="Sort Button"/>
-                                </items>
-                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="DET-fH-Q87" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="HnX-3F-GRl"/>
-                            <constraint firstItem="DET-fH-Q87" firstAttribute="top" secondItem="G7q-Y0-W9E" secondAttribute="bottom" id="LN0-lV-shZ"/>
+                            <constraint firstItem="DET-fH-Q87" firstAttribute="top" secondItem="G7q-Y0-W9E" secondAttribute="bottom" id="Bgs-1z-Ww6"/>
+                            <constraint firstItem="DET-fH-Q87" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="IrI-IR-5ix"/>
                             <constraint firstItem="DET-fH-Q87" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P5X-Ec-gm4"/>
                             <constraint firstItem="G7q-Y0-W9E" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="RRv-zk-sI2"/>
-                            <constraint firstItem="DET-fH-Q87" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="Tjs-y6-w41"/>
                             <constraint firstAttribute="bottom" secondItem="DET-fH-Q87" secondAttribute="bottom" id="Ww4-A5-ph2"/>
                             <constraint firstItem="G7q-Y0-W9E" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="oMs-f4-Nr4"/>
                             <constraint firstItem="G7q-Y0-W9E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="w68-hX-6Qx"/>
