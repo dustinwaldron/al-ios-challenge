@@ -21,4 +21,11 @@ class ServiceProviderMapper {
         serviceProviderCell.locationLabel?.text = "\(serviceProvider.city), \(serviceProvider.state) \(serviceProvider.postalCode)"
         return serviceProviderCell
     }
+    
+    static func toServiceProviderDetailView(serviceProvider: ServiceProvider, serviceProviderDetailView: ServiceProviderDetailView) {
+        serviceProviderDetailView.nameLabel?.text = serviceProvider.name
+        serviceProviderDetailView.gradeLabel?.text = "Grade: \(serviceProvider.overallGrade)"
+        serviceProviderDetailView.reviewLabel?.text = "Reviews: \(serviceProvider.reviewCount)"
+        serviceProviderDetailView.locationLabel?.text = "\(serviceProvider.city), \(serviceProvider.state) \(serviceProvider.postalCode)"
+    }
 }

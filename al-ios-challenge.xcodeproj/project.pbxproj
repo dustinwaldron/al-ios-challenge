@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BDC73E4C22B1D9EB00A5A0A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC73E4B22B1D9EB00A5A0A3 /* AppDelegate.swift */; };
-		BDC73E4E22B1D9EB00A5A0A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC73E4D22B1D9EB00A5A0A3 /* ViewController.swift */; };
+		BDC73E4E22B1D9EB00A5A0A3 /* ServiceProviderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC73E4D22B1D9EB00A5A0A3 /* ServiceProviderTableViewController.swift */; };
 		BDC73E5122B1D9EB00A5A0A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDC73E4F22B1D9EB00A5A0A3 /* Main.storyboard */; };
 		BDC73E5322B1D9EB00A5A0A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDC73E5222B1D9EB00A5A0A3 /* Assets.xcassets */; };
 		BDC73E5622B1D9EB00A5A0A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDC73E5422B1D9EB00A5A0A3 /* LaunchScreen.storyboard */; };
@@ -19,12 +19,14 @@
 		BDC73E6B22B2006A00A5A0A3 /* ServiceProviderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC73E6A22B2006A00A5A0A3 /* ServiceProviderService.swift */; };
 		BDC73E6D22B2041800A5A0A3 /* ServiceProviderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC73E6C22B2041800A5A0A3 /* ServiceProviderTableViewCell.swift */; };
 		BDC73E6F22B20B3000A5A0A3 /* ServiceProviderMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC73E6E22B20B3000A5A0A3 /* ServiceProviderMapper.swift */; };
+		BDC73E7422B46A8E00A5A0A3 /* ServiceProviderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC73E7322B46A8E00A5A0A3 /* ServiceProviderDetailViewController.swift */; };
+		BDC73E7822B46B5800A5A0A3 /* ServiceProviderDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC73E7722B46B5800A5A0A3 /* ServiceProviderDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BDC73E4822B1D9EB00A5A0A3 /* al-ios-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "al-ios-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDC73E4B22B1D9EB00A5A0A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BDC73E4D22B1D9EB00A5A0A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BDC73E4D22B1D9EB00A5A0A3 /* ServiceProviderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProviderTableViewController.swift; sourceTree = "<group>"; };
 		BDC73E5022B1D9EB00A5A0A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BDC73E5222B1D9EB00A5A0A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDC73E5522B1D9EB00A5A0A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +38,8 @@
 		BDC73E6A22B2006A00A5A0A3 /* ServiceProviderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProviderService.swift; sourceTree = "<group>"; };
 		BDC73E6C22B2041800A5A0A3 /* ServiceProviderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProviderTableViewCell.swift; sourceTree = "<group>"; };
 		BDC73E6E22B20B3000A5A0A3 /* ServiceProviderMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProviderMapper.swift; sourceTree = "<group>"; };
+		BDC73E7322B46A8E00A5A0A3 /* ServiceProviderDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProviderDetailViewController.swift; sourceTree = "<group>"; };
+		BDC73E7722B46B5800A5A0A3 /* ServiceProviderDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProviderDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +89,8 @@
 		BDC73E5D22B1DA9800A5A0A3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				BDC73E6C22B2041800A5A0A3 /* ServiceProviderTableViewCell.swift */,
+				BDC73E7622B46B2600A5A0A3 /* ServiceProviderDetail */,
+				BDC73E7522B46B0B00A5A0A3 /* ServiceProviderTable */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -93,7 +98,8 @@
 		BDC73E5E22B1DA9E00A5A0A3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				BDC73E4D22B1D9EB00A5A0A3 /* ViewController.swift */,
+				BDC73E4D22B1D9EB00A5A0A3 /* ServiceProviderTableViewController.swift */,
+				BDC73E7322B46A8E00A5A0A3 /* ServiceProviderDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -123,6 +129,22 @@
 				BDC73E6A22B2006A00A5A0A3 /* ServiceProviderService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		BDC73E7522B46B0B00A5A0A3 /* ServiceProviderTable */ = {
+			isa = PBXGroup;
+			children = (
+				BDC73E6C22B2041800A5A0A3 /* ServiceProviderTableViewCell.swift */,
+			);
+			path = ServiceProviderTable;
+			sourceTree = "<group>";
+		};
+		BDC73E7622B46B2600A5A0A3 /* ServiceProviderDetail */ = {
+			isa = PBXGroup;
+			children = (
+				BDC73E7722B46B5800A5A0A3 /* ServiceProviderDetailView.swift */,
+			);
+			path = ServiceProviderDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,13 +219,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDC73E6222B1E77A00A5A0A3 /* ServiceProvider.swift in Sources */,
+				BDC73E7822B46B5800A5A0A3 /* ServiceProviderDetailView.swift in Sources */,
 				BDC73E6622B1FC5500A5A0A3 /* JSONParser.swift in Sources */,
-				BDC73E4E22B1D9EB00A5A0A3 /* ViewController.swift in Sources */,
+				BDC73E4E22B1D9EB00A5A0A3 /* ServiceProviderTableViewController.swift in Sources */,
 				BDC73E6F22B20B3000A5A0A3 /* ServiceProviderMapper.swift in Sources */,
 				BDC73E6B22B2006A00A5A0A3 /* ServiceProviderService.swift in Sources */,
 				BDC73E6822B1FC8B00A5A0A3 /* ServiceProviderJSONTrasformer.swift in Sources */,
 				BDC73E6D22B2041800A5A0A3 /* ServiceProviderTableViewCell.swift in Sources */,
 				BDC73E4C22B1D9EB00A5A0A3 /* AppDelegate.swift in Sources */,
+				BDC73E7422B46A8E00A5A0A3 /* ServiceProviderDetailViewController.swift in Sources */,
 				BDC73E6422B1F9C400A5A0A3 /* HTTPHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
