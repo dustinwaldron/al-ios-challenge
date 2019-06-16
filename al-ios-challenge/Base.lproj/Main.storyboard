@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sF7-6v-Mq9">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,11 +15,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" userLabel="Service Provider Table Controller" customClass="ServiceProviderTableViewController" customModule="al_ios_challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G7q-Y0-W9E">
-                                <rect key="frame" x="0.0" y="88" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="32" width="667" height="32"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="il7-ya-QpI"/>
                                     <barButtonItem title="Sort" style="done" id="EF0-LM-Jan" userLabel="Sort Button">
@@ -31,25 +31,25 @@
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </toolbar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DET-fH-Q87">
-                                <rect key="frame" x="0.0" y="132" width="414" height="764"/>
+                                <rect key="frame" x="0.0" y="64" width="667" height="311"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ServiceProviderTableViewCell" id="xAy-3V-8jD" customClass="ServiceProviderTableViewCell" customModule="al_ios_challenge" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="100"/>
+                                        <rect key="frame" x="0.0" y="28" width="667" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xAy-3V-8jD" id="6Oq-1G-KPQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="99.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="667" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="309 Recent Reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FIX-W5-6qo" userLabel="Review Label">
-                                                    <rect key="frame" x="67" y="8" width="330" height="21"/>
+                                                    <rect key="frame" x="67" y="8" width="571" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mQc-KL-XDf" userLabel="Name Label">
-                                                    <rect key="frame" x="67" y="30" width="333" height="39"/>
+                                                    <rect key="frame" x="67" y="30" width="576" height="39"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="William J Ciriello Plumbing Co Inc">
@@ -63,7 +63,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Beach Grove, IN 46107" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2yg-Zc-P2I" userLabel="Location Label">
-                                                    <rect key="frame" x="67" y="70" width="333" height="21"/>
+                                                    <rect key="frame" x="67" y="70" width="576" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                                     <nil key="textColor"/>
@@ -134,18 +134,17 @@
             <objects>
                 <viewController id="419-U3-YvL" userLabel="Service Provider Detail Controller" customClass="ServiceProviderDetailViewController" customModule="al_ios_challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="grw-C8-KyD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="ServiceProviderMap" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="RJk-i4-PQN" customClass="ServiceProviderDetailMapView" customModule="al_ios_challenge" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="88" width="414" height="358.5"/>
+                                <rect key="frame" x="0.0" y="32" width="333.5" height="343"/>
                             </mapView>
                             <view contentMode="scaleToFill" restorationIdentifier="ServiceProviderDetailView" translatesAutoresizingMaskIntoConstraints="NO" id="NnX-0D-f6L" userLabel="Detail View" customClass="ServiceProviderDetailView" customModule="al_ios_challenge" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="446.5" width="414" height="415.5"/>
+                                <rect key="frame" x="333.5" y="32" width="333.5" height="343"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8vs-1R-TBu" userLabel="Name Label">
-                                        <rect key="frame" x="8" y="8" width="345" height="28"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8vs-1R-TBu" userLabel="Name Label">
+                                        <rect key="frame" x="8" y="8" width="325.5" height="28"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Johnson Heating &amp; Cooling">
                                                 <attributes>
@@ -157,7 +156,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="DKT-vN-XGU" userLabel="Review Label">
-                                        <rect key="frame" x="8" y="106" width="207" height="20.5"/>
+                                        <rect key="frame" x="8" y="106" width="333.5" height="20.5"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Reviews: 347">
                                                 <attributes>
@@ -168,21 +167,8 @@
                                         </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="qC4-Wk-te9" userLabel="Location Label">
-                                        <rect key="frame" x="8" y="52" width="345" height="23"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <attributedString key="attributedText">
-                                            <fragment content="Indianapolis, IN 46237">
-                                                <attributes>
-                                                    <font key="NSFont" size="20" name="Georgia"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="U8L-Dj-v4o" userLabel="Grade Label">
-                                        <rect key="frame" x="199" y="106" width="207" height="20.5"/>
+                                        <rect key="frame" x="159" y="106" width="166.5" height="20.5"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Grade: A">
                                                 <attributes>
@@ -193,10 +179,28 @@
                                         </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="qC4-Wk-te9" userLabel="Location Label">
+                                        <rect key="frame" x="8" y="44" width="325.5" height="23"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Indianapolis, IN 46237">
+                                                <attributes>
+                                                    <font key="NSFont" size="20" name="Georgia"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="8vs-1R-TBu" firstAttribute="top" secondItem="NnX-0D-f6L" secondAttribute="top" constant="8" id="Diu-Qb-Iid"/>
+                                    <constraint firstItem="8vs-1R-TBu" firstAttribute="leading" secondItem="NnX-0D-f6L" secondAttribute="leading" constant="8" id="DqG-sT-Vw0"/>
                                     <constraint firstItem="U8L-Dj-v4o" firstAttribute="width" secondItem="NnX-0D-f6L" secondAttribute="width" multiplier="0.5" id="Njs-Jm-pyw"/>
+                                    <constraint firstItem="qC4-Wk-te9" firstAttribute="top" secondItem="NnX-0D-f6L" secondAttribute="top" constant="44" id="QFj-XQ-Tz6"/>
+                                    <constraint firstAttribute="trailing" secondItem="8vs-1R-TBu" secondAttribute="trailing" id="VMT-l4-UER"/>
+                                    <constraint firstItem="qC4-Wk-te9" firstAttribute="leading" secondItem="NnX-0D-f6L" secondAttribute="leading" constant="8" id="md2-yb-oBZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="qC4-Wk-te9" secondAttribute="trailing" id="npK-ud-sjF"/>
                                     <constraint firstItem="U8L-Dj-v4o" firstAttribute="top" secondItem="NnX-0D-f6L" secondAttribute="top" constant="106" id="rA7-RH-zKM"/>
                                     <constraint firstItem="DKT-vN-XGU" firstAttribute="top" secondItem="NnX-0D-f6L" secondAttribute="top" constant="106" id="xC3-Zb-IdB"/>
                                     <constraint firstAttribute="trailing" secondItem="U8L-Dj-v4o" secondAttribute="trailing" constant="8" id="xdZ-3z-W5x"/>
@@ -298,7 +302,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sF7-6v-Mq9" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fcp-2g-9x6">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="32"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
