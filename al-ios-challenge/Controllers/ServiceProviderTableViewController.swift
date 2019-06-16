@@ -45,7 +45,7 @@ class ServiceProviderTableViewController: UIViewController, UITableViewDelegate,
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let serviceProviderCell = tableView.dequeueReusableCell(withIdentifier: "ServiceProviderTableViewCell", for: indexPath) as! ServiceProviderTableViewCell
         let serviceProvider = serviceProviders[indexPath.row]
-        return ServiceProviderMapper.toServiceProviderTableViewCell(serviceProvider: serviceProvider, serviceProviderCell: serviceProviderCell)
+        return ServiceProviderConverter.toServiceProviderTableViewCell(serviceProvider: serviceProvider, serviceProviderCell: serviceProviderCell)
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

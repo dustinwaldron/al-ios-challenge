@@ -2,7 +2,7 @@ import Foundation
 import UIKit
 import CoreLocation
 
-class ServiceProviderMapper {
+class ServiceProviderConverter {
     static private func makeLocationLabelString(serviceProvider: ServiceProvider) -> String {
         return "\(serviceProvider.city), \(serviceProvider.state) \(serviceProvider.postalCode)"
     }

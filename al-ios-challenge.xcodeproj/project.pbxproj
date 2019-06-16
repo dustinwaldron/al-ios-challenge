@@ -18,7 +18,7 @@
 		BDC73E6822B1FC8B00A5A0A3 /* ServiceProviderJSONTrasformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC73E6722B1FC8B00A5A0A3 /* ServiceProviderJSONTrasformer.swift */; };
 		BDC73E6B22B2006A00A5A0A3 /* ServiceProviderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC73E6A22B2006A00A5A0A3 /* ServiceProviderService.swift */; };
 		BDC73E6D22B2041800A5A0A3 /* ServiceProviderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC73E6C22B2041800A5A0A3 /* ServiceProviderTableViewCell.swift */; };
-		BDC73E6F22B20B3000A5A0A3 /* ServiceProviderMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC73E6E22B20B3000A5A0A3 /* ServiceProviderMapper.swift */; };
+		BDC73E6F22B20B3000A5A0A3 /* ServiceProviderConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC73E6E22B20B3000A5A0A3 /* ServiceProviderConverter.swift */; };
 		BDC73E7422B46A8E00A5A0A3 /* ServiceProviderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC73E7322B46A8E00A5A0A3 /* ServiceProviderDetailViewController.swift */; };
 		BDC73E7822B46B5800A5A0A3 /* ServiceProviderDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC73E7722B46B5800A5A0A3 /* ServiceProviderDetailView.swift */; };
 		BDC73E7A22B55F7400A5A0A3 /* ServiceProviderDetailMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC73E7922B55F7400A5A0A3 /* ServiceProviderDetailMapView.swift */; };
@@ -39,7 +39,7 @@
 		BDC73E6722B1FC8B00A5A0A3 /* ServiceProviderJSONTrasformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProviderJSONTrasformer.swift; sourceTree = "<group>"; };
 		BDC73E6A22B2006A00A5A0A3 /* ServiceProviderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProviderService.swift; sourceTree = "<group>"; };
 		BDC73E6C22B2041800A5A0A3 /* ServiceProviderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProviderTableViewCell.swift; sourceTree = "<group>"; };
-		BDC73E6E22B20B3000A5A0A3 /* ServiceProviderMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProviderMapper.swift; sourceTree = "<group>"; };
+		BDC73E6E22B20B3000A5A0A3 /* ServiceProviderConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProviderConverter.swift; sourceTree = "<group>"; };
 		BDC73E7322B46A8E00A5A0A3 /* ServiceProviderDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProviderDetailViewController.swift; sourceTree = "<group>"; };
 		BDC73E7722B46B5800A5A0A3 /* ServiceProviderDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProviderDetailView.swift; sourceTree = "<group>"; };
 		BDC73E7922B55F7400A5A0A3 /* ServiceProviderDetailMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProviderDetailMapView.swift; sourceTree = "<group>"; };
@@ -76,6 +76,7 @@
 		BDC73E4A22B1D9EB00A5A0A3 /* al-ios-challenge */ = {
 			isa = PBXGroup;
 			children = (
+				BDC73E7D22B5FC3700A5A0A3 /* Converters */,
 				BDC73E6922B2005900A5A0A3 /* Services */,
 				BDC73E6022B1DAAE00A5A0A3 /* Helpers */,
 				BDC73E5F22B1DAA600A5A0A3 /* Models */,
@@ -122,7 +123,6 @@
 				BDC73E6322B1F9C400A5A0A3 /* HTTPHandler.swift */,
 				BDC73E6522B1FC5500A5A0A3 /* JSONParser.swift */,
 				BDC73E6722B1FC8B00A5A0A3 /* ServiceProviderJSONTrasformer.swift */,
-				BDC73E6E22B20B3000A5A0A3 /* ServiceProviderMapper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -151,6 +151,14 @@
 				BDC73E7B22B57DA500A5A0A3 /* ServiceProviderDetailMapPin.swift */,
 			);
 			path = ServiceProviderDetail;
+			sourceTree = "<group>";
+		};
+		BDC73E7D22B5FC3700A5A0A3 /* Converters */ = {
+			isa = PBXGroup;
+			children = (
+				BDC73E6E22B20B3000A5A0A3 /* ServiceProviderConverter.swift */,
+			);
+			path = Converters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,7 +237,7 @@
 				BDC73E7C22B57DA500A5A0A3 /* ServiceProviderDetailMapPin.swift in Sources */,
 				BDC73E6622B1FC5500A5A0A3 /* JSONParser.swift in Sources */,
 				BDC73E4E22B1D9EB00A5A0A3 /* ServiceProviderTableViewController.swift in Sources */,
-				BDC73E6F22B20B3000A5A0A3 /* ServiceProviderMapper.swift in Sources */,
+				BDC73E6F22B20B3000A5A0A3 /* ServiceProviderConverter.swift in Sources */,
 				BDC73E7A22B55F7400A5A0A3 /* ServiceProviderDetailMapView.swift in Sources */,
 				BDC73E6B22B2006A00A5A0A3 /* ServiceProviderService.swift in Sources */,
 				BDC73E6822B1FC8B00A5A0A3 /* ServiceProviderJSONTrasformer.swift in Sources */,

@@ -15,10 +15,10 @@ class ServiceProviderDetailViewController: UIViewController {
         self.navigationItem.title = pro.name;
         // initalize map view
         serviceProviderMapView.centerMapOnServiceProviderLocation(serviceProvider: pro)
-        let pin = ServiceProviderMapper.toServiceProviderMapPin(serviceProvider: pro)
+        let pin = ServiceProviderConverter.toServiceProviderMapPin(serviceProvider: pro)
         serviceProviderMapView.addAnnotation(pin)
         // initialize detail view
-        ServiceProviderMapper.toServiceProviderDetailView(serviceProvider: pro, serviceProviderDetailView: self.serviceProviderDetailView)
+        ServiceProviderConverter.toServiceProviderDetailView(serviceProvider: pro, serviceProviderDetailView: self.serviceProviderDetailView)
     }
     
 
